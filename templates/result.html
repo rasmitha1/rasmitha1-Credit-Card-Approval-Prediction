@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prediction Result</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="header">
+
+    SmartBridge
+
+</div>
+
+<div class="container">
+
+<h1>Prediction Result</h1>
+
+<br>
+
+{% if prediction == "Approved" %}
+
+<div class="success">
+
+<h2>✅ Credit Card Approved</h2>
+
+<br>
+
+<p>
+
+The applicant satisfies the eligibility criteria and is likely to receive credit card approval.
+
+</p>
+
+</div>
+
+{% else %}
+
+<div class="danger">
+
+<h2>❌ Credit Card Rejected</h2>
+
+<br>
+
+<p>
+
+The applicant does not currently satisfy the approval criteria based on the available information.
+
+</p>
+
+</div>
+
+{% endif %}
+
+<div class="button-area">
+
+<a href="/predict">
+
+<button>
+
+Predict Another Application
+
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

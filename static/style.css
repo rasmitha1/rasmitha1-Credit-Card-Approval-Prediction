@@ -1,0 +1,270 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f5f8;
+}
+
+/* Header */
+
+.header{
+    width:100%;
+    background:#2f343a;
+    color:white;
+    padding:18px 40px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* Main Container */
+
+.container{
+
+    width:90%;
+    max-width:1100px;
+
+    margin:40px auto;
+
+    background:white;
+
+    border-radius:10px;
+
+    padding:40px;
+
+    box-shadow:0px 6px 15px rgba(0,0,0,.15);
+
+}
+
+h1{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+    color:#222;
+
+}
+
+.description{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:35px;
+
+    font-size:17px;
+
+}
+
+/* Form */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group label{
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    text-transform:uppercase;
+
+    margin-bottom:8px;
+
+    color:#444;
+
+}
+
+.form-group input,
+
+.form-group select{
+
+    padding:12px;
+
+    border:1px solid #d5d5d5;
+
+    border-radius:5px;
+
+    font-size:15px;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus{
+
+    outline:none;
+
+    border:1px solid #1976d2;
+
+}
+
+/* Button */
+
+.button-area{
+
+    margin-top:40px;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#1976d2;
+
+    color:white;
+
+    border:none;
+
+    border-radius:5px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#0d47a1;
+
+}
+
+/* Result */
+
+.success{
+
+    background:#d4edda;
+
+    color:#155724;
+
+    padding:30px;
+
+    border-radius:8px;
+
+    text-align:center;
+
+    font-size:22px;
+
+}
+
+.danger{
+
+    background:#f8d7da;
+
+    color:#721c24;
+
+    padding:30px;
+
+    border-radius:8px;
+
+    text-align:center;
+
+    font-size:22px;
+
+}
+
+/* Home Cards */
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+    margin:40px 0;
+
+}
+
+.card{
+
+    background:#eef5ff;
+
+    border-radius:8px;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-left:5px solid #1976d2;
+
+}
+
+.card h3{
+
+    margin-bottom:10px;
+
+    color:#1976d2;
+
+}
+
+.card p{
+
+    color:#555;
+
+    line-height:1.5;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.form-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.features{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:650px){
+
+.form-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.container{
+
+width:95%;
+
+padding:20px;
+
+}
+
+}
